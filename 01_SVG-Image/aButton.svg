@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg"> <defs>
+   <linearGradient id="GeorgiaTech">
+      <stop stop-color="#F7DC6F" offset="0"/> <stop stop-color="#2E4053" offset="1"/>
+   </linearGradient> </defs>
+   <g id="button" onclick="alert('HEY!');">
+      <rect fill="url(#GeorgiaTech)" width="198" height="83" x="3" y="4" rx="15" />
+      <text x="100" y="55" fill="white" font-size="18pt" text-anchor="middle">Click me</text>
+   </g>
+</svg>
