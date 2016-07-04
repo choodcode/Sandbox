@@ -2,6 +2,9 @@ div {
   width:  200px;
   height: 200px;
   margin: 50px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 200px;
   background-color: #FAF33E;  /* Needed for initial render */
   animation-name: square-to-circle;
   animation-duration: 2.5s;
