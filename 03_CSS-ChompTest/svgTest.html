@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>svgTest</title>
+      <link rel="stylesheet" type="text/css" href="styles.css"/>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   </head>
+   <body>
+      <button id="singleAnim">Trigger Single Animation</button>
+      <button id="allAnim">Trigger ALL Animations</button>
+      <div style="width:30px">
+         <object
+            id="mouthTop1"
+            data="svg/mouthTop.svg"
+            type="image/svg+xml"
+            width="100%">
+         </object>
+         <object data="svg/mouthBottom.svg" type="image/svg+xml" width="100%"></object>
+      </div>
+
+      <div style="width:60px">
+         <object
+            id="mouthTop2"
+            data="svg/mouthTop.svg"
+            type="image/svg+xml"
+            width="100%">
+         </object>
+         <object data="svg/mouthBottom.svg" type="image/svg+xml" width="100%"></object>
+      </div>
+
+      <div style="width:180px">
+         <object
+            id="mouthTop3"
+            data="svg/mouthTop.svg"
+            type="image/svg+xml"
+            width="100%">
+         </object>
+         <object data="svg/mouthBottom.svg" type="image/svg+xml" width="100%"></object>
+      </div>
+      <br />
+      <div style="width:300px">
+         <object
+            id="mouthTop4"
+            data="svg/mouthTop.svg"
+            type="image/svg+xml"
+            width="100%">
+         </object>
+         <object data="svg/mouthBottom.svg" type="image/svg+xml" width="100%"></object>
+
+         <script type="text/javascript">
+            $("button#singleAnim").on("click", function() {
+               $("object#mouthTop3").addClass("clickidy");
+            });
+
+            $("button#allAnim").on("click", function() {
+               $("object[id^=mouthTop]").addClass("clickidy");
+            });
+         </script>
+      </div>
+   </body>
+</html>
